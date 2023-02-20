@@ -28,6 +28,11 @@ module.exports = {
     resolve: {
       extensions: ['.ts', '.js', '.json', ".tsx"]
     },
+    devServer: {
+      port: 3000,
+      open: true,
+      hot: true
+    },
     plugins: [new HtmlWebpackPlugin({
       template: "public/index.html",
       hash: true, // Cache busting
